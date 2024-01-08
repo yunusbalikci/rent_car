@@ -3,6 +3,8 @@ import { Carousel } from 'react-responsive-carousel';
 import DatePicker from "react-datepicker";
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
+import { CiCalendarDate } from "react-icons/ci";
+import { FaChevronRight } from "react-icons/fa";
 
 
 export default function Section(){
@@ -12,42 +14,22 @@ export default function Section(){
         <div >
             <div className="container grid grid-cols-2 grid-rows-1 gap-4">
                 <div>
-
-                    <div className="flex mt-20">
-                        <h1 className="text-gray-700 text-3xl">RENT</h1>
-                        <h1 className="text-red-700 text-3xl">ER</h1>
-                        <p className="text-gray-700 text-lg mt-1 ml-2">is the most popular rent a car service.Easily find your car at the best price and get it delivered to your door.</p>
+                    <h1 className="mt-32 font-bold text-xl">Plan your trip now</h1>
+                    <div className="flex">
+                        <p className="text-5xl font-bold">Save <a className="text-red-500 font-bold text-5xl">money</a>  and</p>
                     </div>
-
-                    <div className="mt-20 border-red-300 rounded-lg shadow-md border-2 border-opacity-40 flex p-2 flex-wrap">
-                        <div>
-                            <label>Name</label>
-                            <input className="border pl-2 border-gray-300 rounded-lg shadow-md w-28 focus:border-red-300 outline-none ml-3" type="text" />
-                        </div>
-                        <div className="ml-4">
-                            <label>Surname</label>
-                            <input className="border pl-2 border-gray-300 rounded-lg shadow-md w-28 focus:border-red-300 outline-none ml-3" type="text" />
-                        </div>
-                        <div className="ml-5">
-                            <label>City</label>
-                            <input className="border pl-2 border-gray-300 rounded-lg shadow-md w-28 focus:border-red-300 outline-none ml-3" type="text" />
-                        </div>
-                        
-                        <div className="mt-5 ">
-                            <label>Phone</label>
-                            <input className="border pl-2 border-gray-300 rounded-lg shadow-md w-28 focus:border-red-300 outline-none ml-2" type="number" />
-                        </div>
-                        <div className="ml-5">
-                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
-                        </div>
-
-                    </div>
-                    
+                    <p className="font-bold text-5xl">get your car</p>
+                    <p className="mt-7 text-gray-700"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <button className="bg-red-500 text-white font-bold text-lg mt-10 w-36 h-12 rounded-lg hover:shadow-red-300 duration-150 shadow-lg">Book Now</button>
+                    <button className="bg-black text-white font-bold text-lg  ml-10 mt-10 w-36 h-12 rounded-lg hover:shadow-neutral-900 duration-150 shadow-lg">Learn More </button>
 
                    
                 </div>
                 <div>
-                    <Carousel className="mt-10">
+                    <Carousel
+                    
+                    autoPlay
+                    className="mt-10 ml-10">
                         <div>
                             <img src="https://purepng.com/public/uploads/large/red-car-ezq.png" alt="" />
                         </div>
