@@ -6,7 +6,9 @@ export default {
   ],
 
   theme: {
-   
+    fontFamily:{
+      open : ['Open Sans', 'sans-serif'],
+    },
     container:{
       center:true,
       screens:{
