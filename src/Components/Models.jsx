@@ -16,10 +16,10 @@ export default function Models(){
         {
             id: 2,
             name: "Honda",
-            image: "https://www.freepnglogos.com/uploads/honda-car-png/honda-car-honda-accord-incentives-specials-offers-moon-25.png",
+            image: "https://honda-bandung.id/wp-content/uploads/2021/05/civic-promo.png",
             engine: "1.5",
             models:"Honda CIVIC",
-            color:"Silver",
+            color:"White",
             seat:"5",
             year:"2020"
             
@@ -126,7 +126,7 @@ export default function Models(){
                         </div>
                     )}
                     {!selectedCar && (
-                        <div className="w-96 h-72 object-cover">
+                        <div className="invisible md:visible w-96 h-72 object-cover">
                         <img src="https://purepng.com/public/uploads/large/red-car-ezq.png" alt="" />
                     </div>
                     )}
